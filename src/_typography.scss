@@ -1,0 +1,11 @@
+@import "./responsive";
+
+.section-title {
+    font-size: 110px;
+    color: #fff;
+    margin: 0;
+
+    @include mq(desktop) {
+        font-size: 80px;
+    }
+}

@@ -1,0 +1,157 @@
+@import "../../responsive";
+
+.name-card-wrapper {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    max-width: 344px;
+    min-width: 344px;
+    width: 100%;
+    border-radius: 16px;
+    background-color: #ffff;
+    padding: 30px 20px;
+    height: auto;
+
+    @include mq(tablet) {
+        max-width: 644px;
+        min-width: initial;
+    }
+
+    @include mq(phone){
+     max-width: 444px;
+    }
+
+    @include mq(phone-sm){
+        max-width: fit-content;
+    }
+
+
+
+    .card-image {
+        img {
+            // max-height: 240px;
+            max-width: 244px;
+            border-radius: 12px;
+
+            @include mq(phone) {
+                height: 324px;
+                max-width: 260px;
+                min-width: 260px;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .card-dev-name {
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    .card-decs {
+        font-size: 18px;
+        font-weight: 500;
+        max-width: 300px;
+        text-align: center;
+        color: #6A6B6E;
+
+        // margin-top: 70px;
+        @include mq(tablet) {
+
+            max-width: initial;
+            min-width: initial;
+        }
+
+    }
+
+    .media-icons-wrapper {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .name-card {
+        position: relative;
+
+        .doodle-one {
+            position: absolute;
+            bottom: 14%;
+            right: -67px;
+
+            @include mq(tablet-sm) {
+                bottom: 24%;
+                right: 14%;
+            }
+
+            @include mq(phone) {
+                right: 2%;
+            }
+
+            @include mq(phone-sm) {
+                right: 0%;
+            }
+
+            @include mq(phone-xs){
+                display: none;
+               opacity: 0.5; 
+            }
+
+            img {
+                max-width: 125px;
+            }
+        }
+
+        .doodle-two {
+            position: absolute;
+            top: -4%;
+            right: -32px;
+
+            @include mq(tablet-sm) {
+                right: 20%;
+            }
+
+            @include mq(phone) {
+                right: 8%;
+            }
+
+            @include mq(phone-xs){
+                opacity: 0.5; 
+                display: none;
+
+             }
+ 
+
+        
+
+            img {
+                max-width: 125px;
+            }
+        }
+
+        .doodle-three {
+            position: absolute;
+            top: 17%;
+            left: -48px;
+
+            @include mq(tablet-sm) {
+                left: 8%;
+            }
+
+            @include mq(phone-sm) {
+                left: 0%;
+            }
+
+            @include mq(phone-xs){
+                opacity: 0.5; 
+                display: none;
+
+             }
+ 
+
+            img {
+                max-width: 125px;
+            }
+        }
+    }
+}

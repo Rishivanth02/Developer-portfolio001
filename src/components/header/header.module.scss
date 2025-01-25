@@ -1,0 +1,161 @@
+@import "../../responsive";
+
+// .header-wrapper {
+//     display: flex;
+//     justify-content: center;
+//     background: #272B30;
+//     border-radius: 16px;
+//     box-shadow: inset 0px -2px 1px rgba(0, 0, 0, 0.4), inset 0px 1px 1px rgba(255, 255, 255, 0.11);
+//     color: #FCFCFC;
+//     width: fit-content;
+//     padding: 12px 30px;
+//     margin: 0 auto;
+//     margin-top: 35px;
+
+
+//     @include mq(tablet) {
+//         padding: 12px 25px;
+//     }
+
+
+
+//     .header-icons-wrapper {
+//         display: flex;
+//         gap: 30px;
+//         align-items: center;
+//         justify-content: space-between;
+
+//         @include mq(phone-xs){
+//             gap: 20px;
+//         }
+    
+
+//         // width: 100%;
+//         .header-icons {
+//             position: relative;
+//             cursor: pointer;
+
+//             img {
+//                 max-width: 20px;
+//                 min-width: 20px;
+
+//                 @include mq(phone-xs){
+//                     max-width: 15px;
+//                     min-width: 15px;
+//                 }
+            
+//             }
+
+//             /* Tooltip styles */
+//             .tooltip {
+//                 position: absolute;
+//                 bottom: -50px;
+//                 /* Position the tooltip below the icon */
+//                 left: 50%;
+//                 transform: translateX(-50%);
+//                 background: rgba(111, 118, 126, 0.2);
+//                 color: #fff;
+//                 padding: 5px 10px;
+//                 border-radius: 5px;
+//                 font-size: 12px;
+//                 white-space: nowrap;
+//                 opacity: 0;
+//                 visibility: hidden;
+//                 transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+//             }
+
+//             /* Show tooltip on hover */
+//             &:hover .tooltip {
+//                 opacity: 1;
+//                 visibility: visible;
+//                 transform: translateX(-50%) translateY(-5px);
+//                 /* Adds a slight upward movement */
+//             }
+//         }
+//     }
+// }
+
+
+
+
+.header-wrapper {
+    position: fixed;
+    top: 60px;
+    right: 15px;
+    width: 320px;
+    height: min-content;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    transform: none;
+    transform-origin: 100% 100% 0px;
+    transition: transform 0.3s ease-in-out;
+    overflow-y: auto;
+    z-index: 1000;
+    backdrop-filter: blur(7px);
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 24px 8px 24px 24px;
+    opacity: 1;
+
+    height: min-content;
+    min-width: 320px;
+    overflow: hidden;
+    padding: 50px;
+    width: 320px;
+    will-change: var(--framer-will-change-override, transform);
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+
+    @include mq(phone-xs){
+      width: 230px;
+      min-width: initial;
+    }
+  
+  
+    &.open {
+      opacity: 1;
+      transform: none;
+      transform-origin: 100% 100% 0px;
+    }
+  
+    &.closed {
+      opacity: 0;
+      transform-origin: 0% 0% 0px;
+    }
+  }
+  
+  .header-icons-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .hamburger {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 1100;
+
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    opacity: 1;
+
+    @include mq(phone){
+      top: 10px;
+    }
+  }
+  
+  .header-link{
+    font-size: 20px;
+    font-weight: 500;
+    transition: all .3s ease;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
