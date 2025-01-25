@@ -1,7 +1,8 @@
 import React from 'react';
 import ContentLeft from '../../components/contentLeft/ContentLeft';
-import ContentRight from '../../components/contentright/ContentRight';
+// import ContentRight from '../../components/contentright/ContentRight';
 import style from "../home/home.module.scss";
+import ContentRight from "../../components/contentRight/ContentRight";
 
 
 
