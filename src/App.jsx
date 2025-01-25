@@ -1,7 +1,8 @@
-import MainContent from "./components/maincontent/MainContent";
+
 import "./App.css";
 import downloadIcon from "./assets/svg/download-solid.svg";
 import Header from "./components/header/Header";
+import MainContent from "./components/mainContent/MainContent";
 
 function App() {
   const downloadCV = () => {
