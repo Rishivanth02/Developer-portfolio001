@@ -8,6 +8,6 @@ export default defineConfig({
     outDir: 'dist', 
     assetsDir: 'assets', 
   },
-  base: "/Developer-portfolio001"
+  base: "/"
 
 })

@@ -1,6 +1,5 @@
 {
   "name": "developerfolio",
-  "homepage": "https://rishivanthof.github.io/Developer-portfolio001/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run dev",
-    "deploy": "gh-pages -d dist"
+   "deploy": "vercel --prod"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
