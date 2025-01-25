@@ -1,0 +1,107 @@
+@import "../../responsive";
+
+.skills-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+    @include mq(tablet){
+        flex-direction: column-reverse;
+    }
+
+    .Do {
+        max-width: 530px;
+
+        @include mq(desktop-sm){
+            max-width: 430px;
+        }
+
+        @include mq(phone-xs){
+            max-width: 330px;
+        }
+    }
+
+    .skills-content-heading {
+        font-size: 110px;
+        color: #fff;
+        margin: 0;
+
+        @include mq(desktop) {
+            font-size: 90px;
+        }
+
+        @include mq(desktop-md) {
+            font-size: 70px;
+        }
+
+        @include mq(desktop-sm) {
+            font-size: 60px;
+        }
+
+        @include mq(tablet) {
+            text-align: center;
+        }
+
+        @include mq(phone) {
+            font-size: 52px;
+        }
+
+        @include mq(phone-xs) {
+            font-size: 42px;
+        }
+    }
+
+    .sub-text {
+        color: rgb(111, 118, 126, 0.5);
+    }
+
+    .skills-desc-text {
+        display: flex;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 140%;
+        max-width: 740px;
+        color: #6F767E;
+        margin: 0;
+        margin-bottom: 20px;
+
+        @include mq(desktop) {
+            font-size: 16px;
+        }
+
+        @include mq(tablet) {
+            justify-content: center;
+            text-align: center;
+        }
+    }
+
+    .skills-desc-wrapper{
+        line-height: 140%;
+    }
+
+    .skills-bullets-points {
+        display: flex;
+        align-items: start;
+        gap: 10px;
+      
+        .skills-desc-bullet img {
+          width: 24px; 
+          height: 24px; 
+          object-fit: contain;
+          flex-shrink: 0;
+
+          @include mq(phone-sm){
+            width: 20px; 
+            height: 20px; 
+          }
+
+          @include mq(phone-xs){
+            width: 15px; 
+            height: 15px; 
+          }
+        }
+      }
+      
+      
+    }

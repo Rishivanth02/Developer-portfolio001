@@ -1,0 +1,179 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+/* comman css typography*/
+
+/* .skills-content-heading {
+  font-size: 110px;
+  color: #fff;
+  margin: 0;
+} */
+
+/* .sub-text {
+  color: rgb(111, 118, 126, 0.5);
+} */
+
+
+
+/* .skills-desc-text {
+  display: flex;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  max-width: 740px;
+  color: #6F767E;
+  margin: 0;
+  margin-bottom: 20px;
+} */
+
+/* .sub-topic{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  max-width: 740px;
+  color: #ffff;
+  margin: 0;
+  margin-bottom: 20px;
+} */
+      
+/* footer */
+.footer-form {
+  background-color: #1A1D1F;
+  /* padding: 20px; */
+  border-radius: 8px;
+  width: 60%;
+}
+
+.footer-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-form label {
+  font-size: 16px;
+  font-weight: 400;
+  color: #6F767E;
+}
+
+.footer-form input, 
+.footer-form textarea {
+  padding: 10px;
+  border: 1px solid rgb(111, 118, 126, 0.2);
+  background: rgb(111, 118, 126, 0.2);
+  border-radius: 8px;
+  font-size: 16px;
+  color: #ffff;
+  /* width: 100%; */
+}
+
+.footer-form button {
+  padding: 10px;
+  background-color: #CA6035;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.footer-form input:focus, 
+.footer-form textarea:focus {
+  border-color: #CA6035; 
+  outline: none;
+}
+
+
+.footer-form button:hover {
+  background-color: #f46c38;
+}
+
+.download-cv-wrapper{
+  display: flex;
+  gap: 10px;
+}
+
+.download-cv {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #CA6035; 
+  text-decoration: none;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+.download-icon{
+  img {
+    max-width: 15px;
+    min-width: 15px;
+}
+}
+
+.download-cv:hover {
+  background-color: #CA6035; 
+  transform: scale(1.05);
+}
+
+
+@media (max-width: 991px) {
+  .download-cv {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 991px) {
+  .download-icon{
+    img {
+      max-width: 12px;
+      min-width: 12px;
+  }
+  }
+}
